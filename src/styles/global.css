@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --color-primary: #111827;
+  /* Gray 900 */
+  --color-secondary: #374151;
+  /* Gray 700 */
+  --color-accent: #f97316;
+  /* Orange 500 - Warmth */
+  --color-flame: #3b82f6;
+  /* Blue 500 - Gas Flame */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-primary antialiased selection:bg-accent/20 selection:text-white;
+  }
+}
