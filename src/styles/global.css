@@ -1,23 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: 'Outfit', sans-serif;
-  --color-primary: #111827;
-  /* Gray 900 */
-  --color-secondary: #374151;
-  /* Gray 700 */
+  --font-header: "Rubik", sans-serif;
+  --font-body: "Karla", sans-serif;
+
   --color-accent: #f97316;
-  /* Orange 500 - Warmth */
-  --color-flame: #3b82f6;
-  /* Blue 500 - Gas Flame */
+  /* orange-500 */
+  --color-accent-hover: #ea580c;
+  /* orange-600 */
+
+  --radius-button: 0.5rem;
+  /* rounded-lg */
 }
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
+@layer utilities {
+  .font-header {
+    font-family: var(--font-header);
   }
 
-  body {
-    @apply bg-white text-primary antialiased selection:bg-accent/20 selection:text-white;
+  .font-body {
+    font-family: var(--font-body);
   }
+}
+
+/* Gas Engineer Base Styles (Warm Tech) */
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  /* slate-900 */
 }

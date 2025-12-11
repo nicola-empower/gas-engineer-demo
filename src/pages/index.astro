@@ -31,18 +31,17 @@ import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
 						</div>
 					</div>
 					<h1
-						class="text-5xl font-bold tracking-tight text-white sm:text-7xl mb-6 drop-shadow-lg"
+						class="text-4xl font-header font-bold tracking-tight text-slate-900 sm:text-7xl mb-6"
 					>
-						Smart Heating for the <span class="text-accent"
-							>Modern Home</span
-						>
+						The Efficiency <br />
+						<span class="text-orange-500">Engineer.</span>
 					</h1>
 					<p
-						class="mt-6 text-xl leading-8 text-gray-200 drop-shadow-md max-w-2xl"
+						class="mt-6 text-xl leading-8 text-slate-600 max-w-2xl font-body"
 					>
-						From rapid emergency repairs to high-efficiency smart
-						system installations. We deliver precision heating
-						solutions for Birmingham’s homes and businesses.
+						Optimizing your home's heating performance. From
+						high-efficiency boiler installations to smart climate
+						control, we reduce your bills and your carbon footprint.
 					</p>
 					<div class="mt-10 flex flex-wrap items-center gap-6">
 						<a
@@ -160,40 +159,58 @@ import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
 						safe again.
 					</p>
 					<div class="mt-8 flex justify-center">
-						<div
-							class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 max-w-lg"
-						>
-							<p class="font-semibold text-gray-900">
-								"We treat your home with the same care as our
-								own. Fully insured, strictly vetted, and always
-								respectful of your space."
-							</p>
-						</div>
+						<FeatureSection
+							client:load
+							title="Smart Heating"
+							subtitle="Intelligence built-in"
+							features={[
+								{
+									title: "Smart Thermostats",
+									desc: "Control your heating from anywhere.",
+									icon: ThermometerSun,
+								},
+								{
+									title: "Weather Compensation",
+									desc: "Automatically adjusts boiler flow temperature.",
+									icon: ThermometerSun,
+								},
+								{
+									title: "Zoned Heating",
+									desc: "Heat only the rooms you are using.",
+									icon: ThermometerSun,
+								},
+								{
+									title: "Efficiency Reports",
+									desc: "Track your usage and savings.",
+									icon: ThermometerSun,
+								},
+							]}
+						/>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<ProcessFlow
-			client:visible
-			title="A Hassle-Free Service"
-			subtitle="From Quote to Sign-Off"
+			client:load
+			title="Our Process"
+			subtitle="From quote to warm home"
 			steps={[
 				{
-					title: "Consultation",
-					desc: "We assess your needs—whether repair or full design.",
+					title: "Survey",
+					desc: "We assess your home's heat loss.",
 				},
 				{
-					title: "Fixed-Price Quote",
-					desc: "Detailed digital quote instantly. No guesswork.",
+					title: "Design",
+					desc: "We specify the perfect system for you.",
 				},
 				{
-					title: "Precision Execution",
-					desc: "Uniformed team completes work to highest standards.",
+					title: "Install",
+					desc: "Precision installation by expert engineers.",
 				},
 				{
-					title: "Digital Sign-Off",
-					desc: "Warranty and certificates handled digitally.",
+					title: "Handover",
+					desc: "We show you how to use your new system.",
 				},
 			]}
 		/>
