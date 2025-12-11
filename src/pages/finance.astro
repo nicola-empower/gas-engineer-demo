@@ -1,0 +1,229 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FeatureSection from "../components/FeatureSection.jsx";
+import TrustBar from "../components/TrustBar.jsx";
+import FAQ from "../components/FAQ.jsx";
+---
+
+<Layout title="Boiler Finance | Therma Heat">
+    <main class="bg-white">
+        <!-- Hero -->
+        <div
+            class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+        >
+            <img
+                src="/hero.png"
+                alt=""
+                class="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-25"
+            />
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h1
+                        class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+                    >
+                        Spread the Cost of Your New Boiler
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        Why wait? Get a brand new, energy-efficient Worcester
+                        Bosch boiler today and pay it off in affordable monthly
+                        instalments. 0% Interest options available.
+                    </p>
+                    <div class="mt-10 flex items-center gap-x-6">
+                        <a
+                            href="/quote"
+                            class="rounded-md bg-accent px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >Check Eligibility</a
+                        >
+                        <a
+                            href="/contact"
+                            class="text-sm font-semibold leading-6 text-white"
+                            >Contact Us <span aria-hidden="true">→</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <TrustBar
+            client:visible
+            items={[
+                {
+                    title: "No Deposit",
+                    subtitle: "Options Available",
+                    icon: null,
+                    colorClass: "text-green-500",
+                },
+                {
+                    title: "0% APR",
+                    subtitle: "On Selected Boilers",
+                    icon: null,
+                    colorClass: "text-blue-500",
+                },
+                {
+                    title: "Flexible Terms",
+                    subtitle: "3 to 10 Years",
+                    icon: null,
+                    colorClass: "text-yellow-500",
+                },
+            ]}
+        />
+
+        <!-- Finance Examples -->
+        <div class="py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center mb-16">
+                    <h2 class="text-base font-semibold leading-7 text-accent">
+                        Affordable Heating
+                    </h2>
+                    <p
+                        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                    >
+                        Representative Examples
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Plan 1 -->
+                    <div
+                        class="rounded-3xl p-8 ring-1 ring-gray-200 bg-white shadow-sm hover:shadow-lg transition-all"
+                    >
+                        <h3
+                            class="text-lg font-semibold leading-8 text-gray-900"
+                        >
+                            Interest Free
+                        </h3>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">
+                            Spread the cost over 12 months with no interest.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                            <span
+                                class="text-4xl font-bold tracking-tight text-gray-900"
+                                >£166</span
+                            >
+                            <span
+                                class="text-sm font-semibold leading-6 text-gray-600"
+                                >/month</span
+                            >
+                        </p>
+                        <ul
+                            class="mt-8 space-y-3 text-sm leading-6 text-gray-600"
+                        >
+                            <li class="flex gap-x-3">
+                                <strong>Borrow:</strong> £2,000
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Deposit:</strong> £0
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Term:</strong> 12 Months
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Total Payable:</strong> £2,000
+                            </li>
+                        </ul>
+                        <a
+                            href="/quote"
+                            class="mt-8 block rounded-md bg-accent px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >Get this plan</a
+                        >
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div
+                        class="rounded-3xl p-8 ring-1 ring-accent/20 bg-gray-50 shadow-md scale-105"
+                    >
+                        <h3 class="text-lg font-semibold leading-8 text-accent">
+                            Standard Plan
+                        </h3>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">
+                            Low monthly payments over a longer period.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                            <span
+                                class="text-4xl font-bold tracking-tight text-gray-900"
+                                >£35</span
+                            >
+                            <span
+                                class="text-sm font-semibold leading-6 text-gray-600"
+                                >/month</span
+                            >
+                        </p>
+                        <ul
+                            class="mt-8 space-y-3 text-sm leading-6 text-gray-600"
+                        >
+                            <li class="flex gap-x-3">
+                                <strong>Borrow:</strong> £2,000
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Deposit:</strong> £0
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Term:</strong> 5 Years
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>APR:</strong> 9.9%
+                            </li>
+                        </ul>
+                        <a
+                            href="/quote"
+                            class="mt-8 block rounded-md bg-accent px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >Most Popular</a
+                        >
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div
+                        class="rounded-3xl p-8 ring-1 ring-gray-200 bg-white shadow-sm hover:shadow-lg transition-all"
+                    >
+                        <h3
+                            class="text-lg font-semibold leading-8 text-gray-900"
+                        >
+                            Buy Now pay Later
+                        </h3>
+                        <p class="mt-4 text-sm leading-6 text-gray-600">
+                            Nothing to pay for 12 months, then spread the cost.
+                        </p>
+                        <p class="mt-6 flex items-baseline gap-x-1">
+                            <span
+                                class="text-4xl font-bold tracking-tight text-gray-900"
+                                >£42</span
+                            >
+                            <span
+                                class="text-sm font-semibold leading-6 text-gray-600"
+                                >/month</span
+                            >
+                        </p>
+                        <ul
+                            class="mt-8 space-y-3 text-sm leading-6 text-gray-600"
+                        >
+                            <li class="flex gap-x-3">
+                                <strong>Borrow:</strong> £2,000
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Deposit:</strong> £0
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>Deferred:</strong> 12 Months
+                            </li>
+                            <li class="flex gap-x-3">
+                                <strong>APR:</strong> 11.9%
+                            </li>
+                        </ul>
+                        <a
+                            href="/quote"
+                            class="mt-8 block rounded-md bg-accent px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >Select Plan</a
+                        >
+                    </div>
+                </div>
+                <p class="text-center mt-8 text-xs text-gray-500">
+                    Therma Heat is an Introducer Appointed Representative of
+                    FinanceCo Ltd. Credit is subject to status and
+                    affordability.
+                </p>
+            </div>
+        </div>
+
+        <FAQ client:visible />
+    </main>
+</Layout>
