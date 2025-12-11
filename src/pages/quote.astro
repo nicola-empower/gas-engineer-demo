@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TrustBar from "../components/TrustBar.jsx";
+---
+
+<Layout title="Get a Quote | Therma Heat">
+    <main class="bg-gray-50 min-h-screen">
+        <!-- Header -->
+        <div class="bg-white py-16 text-center shadow-sm">
+            <h1
+                class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4"
+            >
+                Instant Quotes. Transparent Pricing. No Hidden Fees.
+            </h1>
+            <p class="text-lg leading-8 text-gray-600 max-w-2xl mx-auto px-6">
+                Ready to upgrade your home heating? Use our smart quoting tool
+                to get an accurate, fixed-price estimate in under 60 seconds. No
+                waiting on hold, no sales pressure.
+            </p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-24">
+                <!-- Option A -->
+                <div
+                    class="bg-white rounded-2xl shadow-xl p-8 border-2 border-transparent hover:border-accent transition-all duration-300 transform hover:-translate-y-1"
+                >
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        I need a new system
+                    </h2>
+                    <p class="text-gray-600 mb-8 h-20">
+                        Answer a few questions about your home (bedrooms,
+                        bathrooms, flue type) and get a range of fixed-price
+                        options instantly.
+                    </p>
+                    <a
+                        href="#"
+                        class="block w-full text-center rounded-lg bg-primary px-6 py-4 text-white font-bold hover:bg-primary/90 transition-colors"
+                    >
+                        Start Smart Quote
+                    </a>
+                </div>
+
+                <!-- Option B -->
+                <div
+                    class="bg-white rounded-2xl shadow-xl p-8 border-2 border-transparent hover:border-red-500 transition-all duration-300 transform hover:-translate-y-1"
+                >
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
+                        I have a breakdown
+                    </h2>
+                    <p class="text-gray-600 mb-8 h-20">
+                        Boiler making noise? radiators cold? Book a certified
+                        engineer for a specific time slot.
+                    </p>
+                    <a
+                        href="#"
+                        class="block w-full text-center rounded-lg bg-red-600 px-6 py-4 text-white font-bold hover:bg-red-500 transition-colors"
+                    >
+                        Book an Engineer
+                    </a>
+                </div>
+            </div>
+
+            <!-- Why Quote Online & Contact -->
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8">
+                        Why use our Digital Quote System?
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div class="relative pl-12">
+                            <span class="absolute left-0 top-0 text-2xl"
+                                >⚡️</span
+                            >
+                            <h4 class="font-bold text-gray-900 mb-2">
+                                It’s Instant
+                            </h4>
+                            <p class="text-gray-600">
+                                Don't wait days for a callback. Get a ballpark
+                                figure immediately based on your specific home
+                                setup.
+                            </p>
+                        </div>
+                        <div class="relative pl-12">
+                            <span class="absolute left-0 top-0 text-2xl"
+                                >🔒</span
+                            >
+                            <h4 class="font-bold text-gray-900 mb-2">
+                                It’s Fixed
+                            </h4>
+                            <p class="text-gray-600">
+                                The price you see includes parts, labour, and
+                                VAT. No nasty surprises on the final invoice.
+                            </p>
+                        </div>
+                        <div class="relative pl-12">
+                            <span class="absolute left-0 top-0 text-2xl"
+                                >📋</span
+                            >
+                            <h4 class="font-bold text-gray-900 mb-2">
+                                It’s Comprehensive
+                            </h4>
+                            <p class="text-gray-600">
+                                Our tool checks for compatibility with smart
+                                controls (Nest/Hive) and system filters
+                                automatically.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-xl p-8 h-fit">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">
+                        Prefer to speak to a human?
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        We understand that sometimes you just want to talk it
+                        through. Our local office in Birmingham is open Mon-Fri,
+                        8am-6pm.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="font-semibold text-primary">
+                            Phone: 0121 900 1234
+                        </p>
+                        <p class="font-semibold text-primary">
+                            Email: hello@thermaheat-demo.co.uk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
