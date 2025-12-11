@@ -2,7 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import TrustBar from "../components/TrustBar.jsx";
 import Testimonials from "../components/Testimonials.jsx";
-import FAQ from "../components/FAQ.jsx";
+import FeatureSection from "../components/FeatureSection.jsx";
+import ServiceAreaMap from "../components/ServiceAreaMap.jsx";
+import ProcessFlow from "../components/ProcessFlow.jsx";
+import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
 ---
 
 <Layout title="Therma Heat - Gas Safe Engineers & Heating Specialists">
@@ -94,25 +97,62 @@ import FAQ from "../components/FAQ.jsx";
 
 		<div class="relative z-20 bg-white"><TrustBar client:visible /></div>
 
-        <!-- Services Preview Section -->
-		<div class="py-24 sm:py-32 bg-orange-50">
+		<!-- Services Feature Section -->
+		<FeatureSection
+			client:visible
+			title="Smart Energy Solutions"
+			subtitle="Efficient Heating"
+			description="Stop wasting money on inefficient heating. We install A-rated boilers and smart controls that could save you up to £580 a year on energy bills."
+			features={[
+				{
+					title: "Boiler Installation",
+					desc: "Worcester Bosch and Viessmann accredited installers.",
+				},
+				{
+					title: "Smart Controls",
+					desc: "Nest and Hive installation for total control.",
+				},
+				{
+					title: "Power Flushing",
+					desc: "Restore system efficiency and radiator output.",
+				},
+			]}
+			imageSrc="/hero.png"
+			quote="Our heating bills have dropped significantly since Therma Heat installed our new system. Highly recommended."
+			author="Mr. Patel, Solihull"
+			align="left"
+		/>
+
+		<ProcessFlow client:visible />
+
+		<!-- Service Area Map Section -->
+		<div class="py-24 bg-white">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<div class="mx-auto max-w-2xl text-center">
-					<h2 class="text-base font-semibold leading-7 text-flame">
-						Efficient Heating
+				<div class="mx-auto max-w-2xl text-center mb-16">
+					<h2 class="text-base font-semibold leading-7 text-accent">
+						Local Coverage
 					</h2>
 					<p
 						class="mt-2 text-3xl font-bold tracking-tight text-primary sm:text-4xl"
 					>
-						Smart Energy Solutions
+						Serving Birmingham & West Midlands
+					</p>
+					<p class="mt-4 text-lg text-gray-500">
+						Rapid response heating engineers across Solihull, Sutton
+						Coldfield, and Dudley.
 					</p>
 				</div>
-				<!-- Add more content here later -->
+				<ServiceAreaMap
+					client:only="react"
+					center={[52.4862, -1.8904]}
+					city="Birmingham"
+					radiusMiles={15}
+				/>
 			</div>
 		</div>
-	<Testimonials client:visible />
-        <FAQ client:visible />
-    </main>
+
+		<Testimonials client:visible />
+		<SafetyGuarantee client:visible />
+		<FAQ client:visible />
+	</main>
 </Layout>
-
-
