@@ -7,7 +7,15 @@ import FeatureSection from "../components/FeatureSection.jsx";
 import ServiceAreaMap from "../components/ServiceAreaMap.jsx";
 import ProcessFlow from "../components/ProcessFlow.jsx";
 import SafetyGuarantee from "../components/SafetyGuarantee.jsx";
-import { ThermometerSun } from "lucide-react";
+import {
+	ThermometerSun,
+	ShieldCheck,
+	Award,
+	CheckCircle,
+	Flame,
+	Smartphone,
+	Gauge,
+} from "lucide-react";
 ---
 
 <Layout title="Therma Heat - Gas Safe Engineers & Heating Specialists">
@@ -95,19 +103,19 @@ import { ThermometerSun } from "lucide-react";
 					{
 						title: "1h Rapid Response",
 						subtitle: "Here when you need us",
-						icon: null,
+						icon: CheckCircle,
 						colorClass: "text-red-500",
 					},
 					{
 						title: "10y Warranty",
 						subtitle: "Peace of mind",
-						icon: null,
+						icon: Award,
 						colorClass: "text-blue-500",
 					},
 					{
 						title: "Gas Safe Certified",
 						subtitle: "Safety First",
-						icon: null,
+						icon: ShieldCheck,
 						colorClass: "text-yellow-500",
 					},
 				]}
@@ -124,14 +132,17 @@ import { ThermometerSun } from "lucide-react";
 				{
 					title: "A-Rated Installs",
 					desc: "High-performance Worcester Bosch and Viessmann units that pay for themselves.",
+					icon: Flame,
 				},
 				{
 					title: "Smart Control",
 					desc: "Hive and Nest integration for total control from your phone.",
+					icon: Smartphone,
 				},
 				{
 					title: "Power Flushing",
 					desc: "Restore your radiators to factory-level output and extend lifespan.",
+					icon: Gauge,
 				},
 			]}
 			imageSrc="/hero.png"
@@ -309,18 +320,24 @@ import { ThermometerSun } from "lucide-react";
 			reviews={[
 				{
 					text: "A completely different class of tradesman. The installation was seamless, the pipework is neat, and controlling my heating from my phone has already saved me money.",
-					author: "Sarah J., Solihull",
+					author: "Sarah J.",
+					location: "Solihull",
 					role: "Full System Install",
+					rating: 5,
 				},
 				{
 					text: "Saved us from a freezing weekend. Therma Heat picked up immediately, gave me a clear ETA, and fixed the issue within an hour.",
-					author: "David P., Sutton Coldfield",
+					author: "David P.",
+					location: "Sutton Coldfield",
 					role: "Emergency Repair",
+					rating: 5,
 				},
 				{
 					text: "Finally, a heating company that is organized. From the digital quote to the automated warranty certificate, the whole process was effortless.",
-					author: "Properties Ltd., Birmingham",
+					author: "Properties Ltd.",
+					location: "Birmingham",
 					role: "Commercial Maintenance",
+					rating: 5,
 				},
 			]}
 		/>
